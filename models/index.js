@@ -13,6 +13,8 @@ const sequelize = new Sequelize(
 );
 
 db.User = user;
+//여기에 추가.
+// db.** = **
 
 Object.keys(db).forEach((modelName) => {
     db[modelName].init(sequelize);
